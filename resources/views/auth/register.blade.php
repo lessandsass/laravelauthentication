@@ -8,7 +8,7 @@
                 @csrf
 
                 <div class="mb-4">
-                    <label for="name" class="sr-only">Name</label>
+                    <label for="name" class="sr-onlyZ">Name</label>
                     <input
                         type="text"
                         name="name"
@@ -23,7 +23,6 @@
                             {{ $message }}
                         </div>
                     @enderror
-
                 </div>
 
                 <div class="mb-4">
@@ -42,11 +41,10 @@
                             {{ $message }}
                         </div>
                     @enderror
-
                 </div>
 
                 <div class="mb-4">
-                    <label for="password" class="sr-only">Email</label>
+                    <label for="password" class="sr-only">Password</label>
                     <input
                         type="password"
                         name="password"
@@ -60,7 +58,6 @@
                             {{ $message }}
                         </div>
                     @enderror
-
                 </div>
 
                 <div class="mb-4">
