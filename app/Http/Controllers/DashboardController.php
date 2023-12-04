@@ -12,6 +12,7 @@ class DashboardController extends Controller
     {
         $this->middleware('auth');
     }
+
     public function index() :View
     {
         return view('dashboard');
