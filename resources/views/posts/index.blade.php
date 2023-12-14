@@ -56,13 +56,13 @@
 
                         <p class="mb-2">{{ $post->body }}</p>
 
-                        @if ($post->ownedBy(auth()->id()))
+                        @can('delete', $post)
                             <form action="{{ route('posts.destroy', $post->id) }}" class="p-3 inline" method="post">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="text-red-700">Delete</button>
                             </form>
-                        @endif
+                        @endcan
 
                     @endforeach
 
